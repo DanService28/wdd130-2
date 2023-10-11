@@ -5,7 +5,7 @@
 
 nav a {
     text-align: center;
-    color: #070638 ;
+    color: white ;
     text-decoration: none;
 }
 
@@ -25,52 +25,54 @@ main section{
     height: 725px;
 }
 body {
-    background-color: #758BFD
+    background-color: #CBF3F0
 }
 
 header {
-    background-color: #528fa5
+    background-color: #2EC4B6;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1em;
 }
 nav a:hover {
-    background-color: #C47335;
+    background-color: #396E94;
     color: black ;
 }
 .book:hover, .join:hover { 
-    background-color: #C47335;
+    background-color: #396E94;
     color: black 
 }
 #background {
     background-color: #0d0e0c
 }
 .msg {
-    background-color: #6a9b63
+    background-color: #2EC4B6
 }
 footer {
     background-color: #334E58;
     color: #758BFD 
 }
 .home-title{
-    color: white;
+    color: #1a0d0d;
 }
 h4 {
-    color: white;
+    color: #1a0d0d;
 }
 .book, .join{
-    color: #070638;
+    color: #b91d24;
     text-decoration: none;
 }
 .msg h2{
     color: white;
 }
 .msg p{
-    color: black;
+    color: #1a0d0d;
 }
 footer a{
     color: #758BFD;
     text-decoration: none;
 }
 footer a:hover{
-    color: #C47335;
+    color: #396E94;
 }
 .logo{
     width: 80px;
