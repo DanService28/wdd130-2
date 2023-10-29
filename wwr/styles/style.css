@@ -64,7 +64,6 @@ nav a:hover {
 #background {
     width: 100%;
     height: 900px;
-    border: 1px solid black;
     background-color: black;
     grid-column: 1/11;
     grid-row: 4/9;
