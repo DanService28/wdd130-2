@@ -31,6 +31,7 @@ nav a {
 
 main section{
     text-align: center;
+    
 }
 
 .background {
@@ -200,6 +201,61 @@ nav {
     opacity: .6;
     transform: scale(1.1)
 }
+
+/*Syles for the rivers.html*/
+.rivers-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 160px);
+    grid-template-rows: repeat(14,200px);    
+}
+.rivers-idaho{
+   grid-area: 1/2/3/6;
+   width: 100%;
+   padding-top: 100px;
+   
+}
+.idaho-img{
+    grid-area: 1/6/4/11;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 80px
+}
+
+.rivers-utah{
+    grid-area: 4/6/11/10;
+    width: 100%; 
+    padding-top: 10px;
+}
+.utah-img{
+    grid-area: 4/1/7/6;
+    ;
+    padding-left: 100px;
+  }
+.rivers-arizona{
+    grid-area: 6/2/10/6;
+    width: 100%;
+    padding-top: 125px;
+}
+.arizona-img{
+    grid-area: 6/6/11/10;
+    padding-left: 80px;
+    padding-top: 125px;
+}
+#publicity{
+    grid-area: 10/2/12/5;
+    text-align: center;
+}
+.comments{
+    grid-area: 10/6/14/10;
+    ;
+}
+.rafting-comments{
+    text-align: left;
+}
+
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
