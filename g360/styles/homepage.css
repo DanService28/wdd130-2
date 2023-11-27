@@ -6,21 +6,34 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-header{
-    background-color: #089dd9;
+#hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 560px;
+    margin-top: -100px; 
+}
+#hero h1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 90px;
+}
+header{   
     padding: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
-    border: solid #427aa1 1px;
 }
 #logo{
     width: 40px;
+    z-index: 1;
+
 }
 nav {
     display: flex;
     justify-content: space-around;
     font-size: 25px;
     align-items: center;
+    z-index: 1;
 }   
 nav a{
     text-decoration: none;
@@ -30,10 +43,12 @@ nav a:nth-of-type(1){
     background-color: #e6c345;
     padding: 10px;
     border-radius: 5%;
+    color: black;
     
 }
 nav:hover a {
-    background-color: transparent
+    background-color: transparent;
+    color: white;
 }
 nav a:hover{
     background-color: #e6c345;
@@ -45,6 +60,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(30, 100px);
+    
 }
 #home_title{
     font-family:  Lato, Helvetica, Oswald 300;
@@ -80,9 +96,14 @@ nav a:hover{
     grid-column-start: 3;
     text-align: center;
 }
+#famous-tours{
+    grid-column: 4/8;
+    grid-row-start: 14 ;
+    text-align: center;
+}
 .bartolome-card{
     grid-column: 3/6;
-    grid-row-start: 14 ;
+    grid-row-start: 15 ;
     text-decoration: none;
 }
 .background-bartolome{
@@ -91,6 +112,7 @@ nav a:hover{
     padding-top: 15px;
     padding-bottom: 10px;
     border: solid black 1px;
+    border-radius: 2%;
     transition: transform 0.1s ease;
 }
 .background-bartolome:hover{
@@ -99,7 +121,7 @@ nav a:hover{
 }
 .tour-360-card{
     grid-column: 6/9;
-    grid-row-start: 14;
+    grid-row-start: 15;
     margin-left: 15px;
     text-decoration: none;
     
@@ -110,6 +132,7 @@ nav a:hover{
     padding-top: 10px;
     padding-bottom: 25px;
     border: solid black 1px;
+    border-radius: 2%;
     transition: transform 0.1s ease;
 }
 .background-360:hover{
@@ -118,7 +141,7 @@ nav a:hover{
 }
 .isabela-card{
     grid-column: 3/6;
-    grid-row-start: 21 ;
+    grid-row-start: 22 ;
     text-decoration: none;
     margin-top: 20px;
 }
@@ -128,6 +151,7 @@ nav a:hover{
     padding-top: 10px;
     padding-bottom: 15px;
     border: solid black 1px;
+    border-radius: 2%;
     transition: transform 0.1s ease;
 }
 .background-isabela:hover{
@@ -136,7 +160,7 @@ nav a:hover{
 }
 .santa-fe-card{
     grid-column: 6/9;
-    grid-row-start: 21;
+    grid-row-start: 22;
     margin-left: 15px;
     text-decoration: none;
     margin-top: 20px;
@@ -147,6 +171,7 @@ nav a:hover{
     padding-top: 10px;
     padding-bottom: 15px;
     border: solid black 1px;
+    border-radius: 2%;
     transition: transform 0.1s ease;
 }
 .background-fe:hover{
@@ -173,7 +198,7 @@ nav a:hover{
     justify-content: center; 
     align-items: center;
     background-color: lightblue ;
-    margin: 19px 100px;
+    margin: 22px 100px;
     border: solid black 1px;
     border-radius: 10%;
     transition: transform 0.1s ease;
