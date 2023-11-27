@@ -19,8 +19,28 @@ header{
 nav {
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 25px;
+    align-items: center;
 }   
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav a:nth-of-type(1){
+    background-color: #e6c345;
+    padding: 10px;
+    border-radius: 5%;
+    
+}
+nav:hover a {
+    background-color: transparent
+}
+nav a:hover{
+    background-color: #e6c345;
+    padding: 10px;
+    color: black;
+    border-radius: 5%;
+}
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 10%);
@@ -71,6 +91,11 @@ nav {
     padding-top: 15px;
     padding-bottom: 10px;
     border: solid black 1px;
+    transition: transform 0.1s ease;
+}
+.background-bartolome:hover{
+    opacity: 80%;
+    transform: scale(1.04)
 }
 .tour-360-card{
     grid-column: 6/9;
@@ -85,6 +110,11 @@ nav {
     padding-top: 10px;
     padding-bottom: 25px;
     border: solid black 1px;
+    transition: transform 0.1s ease;
+}
+.background-360:hover{
+    opacity: 80%;
+    transform: scale(1.04)
 }
 .isabela-card{
     grid-column: 3/6;
@@ -98,6 +128,11 @@ nav {
     padding-top: 10px;
     padding-bottom: 15px;
     border: solid black 1px;
+    transition: transform 0.1s ease;
+}
+.background-isabela:hover{
+    opacity: 80%;
+    transform: scale(1.04)
 }
 .santa-fe-card{
     grid-column: 6/9;
@@ -112,6 +147,11 @@ nav {
     padding-top: 10px;
     padding-bottom: 15px;
     border: solid black 1px;
+    transition: transform 0.1s ease;
+}
+.background-fe:hover{
+    opacity: 80%;
+    transform: scale(1.04)
 }
 .card-img{
     border: solid black 1px;
@@ -135,21 +175,28 @@ nav {
     background-color: lightblue ;
     margin: 19px 100px;
     border: solid black 1px;
-    
+    border-radius: 10%;
+    transition: transform 0.1s ease;
 }
 .more{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }
-footer {
+.buttom-box:hover{
+    background-color: rgb(96, 167, 190);
+    transform: scale(1.1)
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-column: 2/9;
     background-color: #089dd9;
     color: black;
-    padding: 25px 50px;
-    margin-top: 20px;
+    
+    margin-top: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1570px;
     border: solid #427aa1 1px;
 }
