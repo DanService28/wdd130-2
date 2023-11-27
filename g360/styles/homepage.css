@@ -1,0 +1,155 @@
+/* Style for the home page */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+
+#content_home{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header{
+    background-color: #089dd9;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: solid #427aa1 1px;
+}
+#logo{
+    width: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}   
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(30, 100px);
+}
+#home_title{
+    font-family:  Lato, Helvetica, Oswald 300;
+    font-size: 2em;
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 5/7;
+}
+.initial_images {
+    grid-column: 2/ span 8;
+    text-align: center;
+    grid-row: 2 span 2;
+    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    height: auto;
+}
+#welcome{
+    grid-column: 3/9;
+    grid-row-start: 6; 
+    align-items: center;
+    margin-top: 50px;
+    font-size: 25px;    
+}
+.map-adventures{
+    grid-column: 3/ span 6;
+    text-align: center;
+    grid-row: 8/11;
+    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    
+}
+.map-adventures p:nth-of-type(1){
+    font-size: 25px; 
+    grid-column-start: 3;
+    text-align: center;
+}
+.bartolome-card{
+    grid-column: 3/6;
+    grid-row-start: 14 ;
+    text-decoration: none;
+}
+.background-bartolome{
+    background-color: #089dd9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: solid black 1px;
+}
+.tour-360-card{
+    grid-column: 6/9;
+    grid-row-start: 14;
+    margin-left: 15px;
+    text-decoration: none;
+    
+}
+.background-360{
+    background-color: #e6c345;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border: solid black 1px;
+}
+.isabela-card{
+    grid-column: 3/6;
+    grid-row-start: 21 ;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.background-isabela{
+    background-color: #e6c345;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border: solid black 1px;
+}
+.santa-fe-card{
+    grid-column: 6/9;
+    grid-row-start: 21;
+    margin-left: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.background-fe{
+    background-color: #089dd9;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border: solid black 1px;
+}
+.card-img{
+    border: solid black 1px;
+    width: 410px;
+}
+.title-card{
+    color: aliceblue;
+    font-size: 25px;
+}
+.p-card{
+    color: black;
+    font-size: 18px;
+    margin: 0 9px;
+}
+.buttom-box{
+    grid-row-start: 29;
+    grid-column: 5/7;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: lightblue ;
+    margin: 19px 100px;
+    border: solid black 1px;
+    
+}
+.more{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+footer {
+    background-color: #089dd9;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1570px;
+    border: solid #427aa1 1px;
+}
