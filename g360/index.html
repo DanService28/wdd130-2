@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
     <link rel="stylesheet" href="styles/homepage.css">
+    <title>Home</title>
 </head>
 <body>
     <div id="content_home">
@@ -24,6 +24,21 @@
                 <img id="hero-img" src="images/hero.jpg" alt="People enjoying rafting">
             </div>
             <h1 class="home-title">Embark on Galápagos Excellence</h1>
+            <div class="form-container" id="formContainer">
+                <div class="vertical-text">Send a Message</div>
+                <form class="form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Include Country Code">
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         <main class="home-grid">
             <h1 id="home_title"> Sail Explore Live</h1>
@@ -132,6 +147,26 @@
                 </a>
             </section> 
         </footer>
+        <script src="script.js"></script>
     </div>
+    <script>
+        document.getElementById('formContainer').addEventListener('click', function(event) {
+            // Evita que el clic se propague al documento y active el evento exterior
+            event.stopPropagation();
+            
+            var formContainer = this;
+        
+            // Mueve el formulario hacia la izquierda
+            formContainer.style.left = '85%';
+        });
+        
+        // Cierra el formulario si se hace clic en cualquier parte del documento
+        document.addEventListener('click', function() {
+            var formContainer = document.getElementById('formContainer');
+            
+            // Mueve el formulario fuera de la vista
+            formContainer.style.left = '100%';
+        });
+    </script>
 </body>
 </html>
