@@ -12,6 +12,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 100vh;
     margin-top: -100px;
+    font-family: serif;
 }
 #hero-img{
     width: 100%;
@@ -34,7 +35,7 @@
     box-sizing: border-box;
 }
 .hero-int h1:nth-of-type(1){
-    font-size: 65px;
+    font-size: 65px ;
     color: #acd7f5;
     margin: 0;
     margin-left: 25px;
@@ -119,7 +120,8 @@ textarea{
 header{   
     padding: 10px;
     display: grid;
-    grid-template-columns: 50% 50%;    
+    grid-template-columns: 50% 50%;   
+    font-family: serif; 
 }
 #logo{
     width: 40px;
