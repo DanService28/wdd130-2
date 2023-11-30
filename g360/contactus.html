@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
+    <link rel="stylesheet" href="styles/contactus.css">
 </head>
 <body>
     <div id="content_home">
         <header>
             <a id="logo_link" href="index.html">
-                <img id="logo" src="images/g360_adventures" alt="G360 Logo">
+                <img id="logo" src="images/g360_adventures.png" alt="G360 Logo">
             </a>
             <nav>
-                <a href="idex.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="dailytour.html">Daily Tour</a>
                 <a href="diving.html">Diving</a>
                 <a href="contactus.html">Contact Us</a>
@@ -76,39 +77,84 @@
                 </a>               
             </div>
             <div class="questions-backgroung">
-                <ul class="faq">
-                    <li>
-                        <p class="questions">
-                            What is the best time to travel Galapagos?</p>
-                        <p></p>                           
-                    </li>
-                    <li>
-                        <p class="questions">
-                            How Can I book?</p>
-                        <p></p>
-                    </li>
-                    <li>
-                        <p class="questions">
-                            When I have to pay?</p>
-                        <p></p>
-                    </li>
-                    <li>
-                        <p class="questions">
-                            What happend if I cancel a tour?
-                        </p>
-                    </li>
-                    <li>
-                        <p class="questions">
-                            What are the most popular destinations in the Galápagos Islands?
-                        </p>
-                    </li>
-                    <li>
-                        <p class="questions">
-                            Can I get a discount per group?
-                        </p>
-                    </li>
-                </ul>
+                <button class="accordion">What is the best time to travel Galapagos?</button>
+                <div class="panel">
+                    <p>The best time to visit the Galapagos Islands depends on your preferences.
+                        If you prefer warmer weather and calm seas, the warm/wet season may be 
+                        more suitable. If you are interested in observing the unique behaviors
+                        of wildlife during different times of the year, you might choose the
+                        cool/dry season. However, keep in mind that the Galapagos Islands are 
+                        a year-round destination with an incredible variety of wildlife and 
+                        landscapes to offer, regardless of the season. You can travel during either
+                        of the two seasons, as both provide the opportunity to witness diverse
+                        attractions and unique animals.<br>
+                        1. Warm/Wet Season (December to May)<br>
+                        2. Cool/Dry Season (June to November)
+                    </p>
+                </div>
+
+                <button class="accordion">What are the most popular destinations in the Galápagos Islands?</button>
+                <div class="panel">
+                    <p>The Galápagos Islands feature a range of popular destinations beyond Santa Cruz, Isabela,
+                        and San Cristóbal. Islands like Bartolomé, Pinzón, Daphne, and others offer unique experiences.
+                        Despite some being more renowned, each island on our tours provides a distinctive and
+                        captivating encounter, showcasing the incredible diversity of the Galápagos.
+                    </p>
+                </div>
+
+                <button class="accordion">What happens if I cancel a tour?</button>
+                <div class="panel">
+                    <p>We understand that plans can change, and we have outlined our cancellation policies on 
+                        our website for your reference. The specifics may vary, so we encourage you to review
+                        the detailed information provided on our cancellation policy page, located further down 
+                        on the website.
+                        In general, cancellations made within a certain timeframe may be eligible for a refund,
+                        while others might incur a cancellation fee. The amount of the refund is often dependent
+                        on how far in advance the cancellation is made.
+                        If you find yourself in a situation where you need to cancel, please reach out to our customer 
+                        service as soon as possible
+                    </p>
+                </div>
+
+                <button class="accordion">Can I get a discount per group?</button>
+                <div class="panel">
+                    <p>Certainly! Discounts for group bookings are possible. We encourage you to reach out to our customer
+                        service to discuss the specifics of your group and to check for availability. Group discounts can 
+                        vary based on factors such as the size of the group, the chosen tour, and the availability of 
+                        accommodations and activities. Our team is here to assist you in customizing your experience and
+                        ensuring you get the best possible value for your group. Contact us to explore the options and secure 
+                        your group reservation.
+                    </p>
+                </div>
+
+                <button class="accordion">How Can I book?</button>
+                <div class="panel">
+                    <p>To book with G360Adventures, we recommend reaching out to us directly through 
+                    our customer service. This allows you to ask questions, gather additional 
+                    information, and receive personalized assistance. We're here to help you at 
+                    every step of the booking process. Once you have all the information you need,
+                    we'll provide you access to our secure payment platform to complete your 
+                    reservation quickly and easily. At G360Adventures, we take pride in offering
+                    a comprehensive and personalized service to ensure that your booking experience
+                    is as smooth as your upcoming adventure. We look forward to assisting you in 
+                    planning your next journey!</p>
+                </div>
+
+                <button class="accordion">When do I need to make the payment?</button>
+                <div class="panel">
+                    <p>The timing of your payment depends on the specifics of your booking. For tours 
+                    scheduled further in advance, it's advisable to secure your reservation early,
+                    as spaces may fill up quickly. This allows ample time for any necessary arrangements
+                    and ensures you secure your spot. Additionally, booking well in advance provides 
+                    flexibility; if you need to cancel later on, you can review our cancellation policies.<br>
+                    For tours scheduled within the next few days, we kindly request that payment be made 
+                    at least 48 hours before the scheduled tour. This ensures a smooth process and allows
+                    us to finalize all arrangements to make your experience memorable. Please feel free 
+                    to reach out to our customer service if you have any questions or need further assistance 
+                    regarding your payment or reservation details.</p>
+                </div>
             </div>
+
             <div id="policies-section">
                 <h3>Cancellation Policies</h3>
                 <p>At G360 Adventures, our goal is to provide you with the best possible experience.
@@ -121,7 +167,7 @@
             </div>
         </main>
     </div>
-    <footer>
+    <footer class="footer-grid">
        <section>
             <h3>Frequently Questions</h3>
             <a href="contactus.html">
@@ -150,13 +196,46 @@
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </section> 
     </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }   
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
 </body>
 </html>
