@@ -18,7 +18,7 @@ document.addEventListener('click', function() {
 });
 
 
-
+// JS PARA EL COMPONENTE DE GALERIA
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -50,3 +50,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+//JS PARA EL CUADRO DE CONDICIONES DE FOTOS
+document.addEventListener('DOMContentLoaded', function () {
+  const showConditionsLink = document.getElementById('showConditions');
+  const conditionsPopup = document.getElementById('conditionsPopup');
+  const closeConditionsBtn = document.getElementById('closeConditions');
+
+  showConditionsLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    conditionsPopup.style.display = 'block';
+  });
+
+  closeConditionsBtn.addEventListener('click', function () {
+    conditionsPopup.style.display = 'none';
+  });
+});
