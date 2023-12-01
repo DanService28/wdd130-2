@@ -256,7 +256,7 @@ nav a:hover{
 .gallery-title{
     grid-column: 7/10;
     grid-row-start: 1;
-    margin-top: 150px;
+    margin-top: 160px;
     text-align: center;
     font-family: serif;
 }
@@ -276,137 +276,173 @@ nav a:hover{
     font-size: 25px;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-.initial_images {
-    grid-column: 2/ span 8;
-    text-align: center;
-    grid-row: 2 span 2;
-    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
-    height: auto;
+.popup {
+  display: none;
+  position: fixed;
+  top: 70%;
+  left: 20%;
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
 }
-#welcome{
-    grid-column: 3/9;
-    grid-row-start: 6; 
-    align-items: center;
-    margin-top: 50px;
-    font-size: 25px;    
+
+.popup-content {
+  text-align: center;
+  font-size: 18px;
 }
-.map-adventures{
-    grid-column: 3/ span 6;
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  background-color: rgb(187, 37, 37);
+  padding: 0 10px;
+}
+.close:hover{
+    background-color: red;
+}
+
+.refconditions {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 25px;
+}
+  
+.refconditions:hover {
+   text-decoration: underline;
+}
+.background3{
+    background-color: #6093b8;
+    grid-area: 3/1/-1/-1;
+}
+.map-title{
+    grid-column: 1/ span 5 ;
+    grid-row-start: 3;
+    margin-top: 90px;
     text-align: center;
-    grid-row: 8/11;
-    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
-    height: auto;
+    margin-left: 100px;
+}
+.map-title h1{
+    font-size: 65px ;
+    color: white;
+    margin: 0;
+    margin-right: 15px;
+}
+.map-title h3{
+    font-size: 20px;
+    margin-top: -1px;
+}
+.map{
+    grid-column: 1/ span 5;
+    text-align: center;
+    grid-row-start: 5;
+    margin-top: 70px;
+    width: 85%; /* Ajustar el ancho de la imagen al 100% del contenedor */
     
-}
-.map-adventures p:nth-of-type(1){
-    font-size: 25px; 
-    grid-column-start: 3;
-    text-align: center;
+    margin-left: 100px ;
+    
 }
 #famous-tours{
-    grid-column: 4/8;
-    grid-row-start: 14 ;
+    grid-column-start: 8 ;
+    grid-row-start: 4 ;
     text-align: center;
 }
-.bartolome-card{
-    grid-column: 3/6;
-    grid-row-start: 15 ;
-    text-decoration: none;
-}
+
 .background-bartolome{
     background-color: #089dd9;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    transition: transform 0.1s ease;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 5/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
 }
-.background-bartolome:hover{
-    opacity: 80%;
-    transform: scale(1.04)
-}
-.tour-360-card{
-    grid-column: 6/9;
-    grid-row-start: 15;
-    margin-left: 15px;
-    text-decoration: none;
-    
-}
+
 .background-360{
-    background-color: #e6c345;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    background-color: #089dd9;
+    padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    transition: transform 0.1s ease;
-}
-.background-360:hover{
-    opacity: 80%;
-    transform: scale(1.04)
-}
-.isabela-card{
-    grid-column: 3/6;
-    grid-row-start: 22 ;
-    text-decoration: none;
-    margin-top: 20px;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 10/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
 }
 .background-isabela{
-    background-color: #e6c345;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    background-color: #089dd9;
+    padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    transition: transform 0.1s ease;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 15/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
 }
-.background-isabela:hover{
-    opacity: 80%;
-    transform: scale(1.04)
-}
-.santa-fe-card{
-    grid-column: 6/9;
-    grid-row-start: 22;
-    margin-left: 15px;
-    text-decoration: none;
-    margin-top: 20px;
-}
+
 .background-fe{
     background-color: #089dd9;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    transition: transform 0.1s ease;
-}
-.background-fe:hover{
-    opacity: 80%;
-    transform: scale(1.04)
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 20/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
 }
 .card-img{
+    margin-right: 20px;
+    width: 300px;
+    height: 350px;
     border: solid black 1px;
-    width: 410px;
 }
-.title-card{
+.card-text h3{
     color: aliceblue;
     font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
 }
-.p-card{
+.card-text p{
     color: black;
     font-size: 18px;
-    margin: 0 9px;
+    margin: 0 12px;
+}
+.img-container {
+    text-align: center;    
+}
+.img-container img{
+    margin-bottom: 25px;
+}
+.img-container a{
+    background-color: #e6c345;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border: solid black 1px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.img-container a:hover{
+    background-color: #facc27;
 }
 .buttom-box{
     grid-row-start: 29;
