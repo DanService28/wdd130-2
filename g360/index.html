@@ -51,18 +51,97 @@
             </div>
         </div>
         <main class="home-grid">
-            <h1 id="home_title"> Sail Explore Live</h1>
-            <div class="initial_images">
-                <img class="home_img" src="images/boats.jpg" alt="Nice Boat">
-                <img class="home_img" src="images/snorkeling.jpg" alt="People Enjoying">
-                <img class="home_img" src="images/nice_view.jpg" alt="Beautiful View">
+            <div class="second-background"></div>
+                                <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="images/sea_lion.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="images/pelican.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="images/bird.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="images/blue-footed.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="images/penguins2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="images/sea_lion2.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/sea_lion.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/pelican.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/bird.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/blue-footed.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/penguins2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/sea_lion2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                </div>
             </div>
-            <p id="welcome">
-                Explore our site and discover exciting itineraries, unique
-                tips for exploring the islands, and the opportunity to customize your
-                own Galapagos odyssey. With G360 Adventures, every moment becomes an 
-                opportunity to marvel and connect with the incredible biodiversity of
-                these islands. </p>
+                
+                            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="initial_images">
+                    <img class="home_img" src="images/boats.jpg" alt="Nice Boat">
+                    <img class="home_img" src="images/snorkeling.jpg" alt="People Enjoying">
+                    <img class="home_img" src="images/nice_view.jpg" alt="Beautiful View">
+                </div>
+                <p id="welcome">
+                    Explore our site and discover exciting itineraries, unique
+                    tips for exploring the islands, and the opportunity to customize your
+                    own Galapagos odyssey. With G360 Adventures, every moment becomes an 
+                    opportunity to marvel and connect with the incredible biodiversity of
+                    these islands. </p>
+              
             <section class="map-adventures">
                 <a href="dailytour.html">
                     <img src="images/galapagos-islands-mapa.gif" alt="Tours Map">
@@ -159,24 +238,7 @@
         </footer>
         <script src="script.js"></script>
     </div>
-    <script>
-        document.getElementById('formContainer').addEventListener('click', function(event) {
-            // Evita que el clic se propague al documento y active el evento exterior
-            event.stopPropagation();
-            
-            var formContainer = this;
-        
-            // Mueve el formulario hacia la izquierda
-            formContainer.style.left = '85%';
-        });
-        
-        // Cierra el formulario si se hace clic en cualquier parte del documento
-        document.addEventListener('click', function() {
-            var formContainer = document.getElementById('formContainer');
-            
-            // Mueve el formulario fuera de la vista
-            formContainer.style.left = '100%';
-        });
-    </script>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
