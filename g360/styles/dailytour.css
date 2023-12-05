@@ -1,0 +1,151 @@
+.map-title{
+    grid-column: 1/ span 5 ;
+    grid-row-start: 4;
+    
+    text-align: center;
+    margin-left: 100px;
+    color: #000000;
+    font-size: 50px;
+}
+.map-title h1{
+    font-size: 65px ;
+    color: #6e5703a1;
+    margin: 0;
+    margin-right: 15px;
+    text-align: center;
+    grid-row-start: 4 ;
+}
+
+.map{
+    grid-column: 1/ span 5;
+    text-align: center;
+    grid-row-start: 5;
+    margin-top: 70px;
+    width: 85%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    scroll-behavior:initial;
+    margin-left: 100px ;
+    
+}
+#famous-tours{
+    grid-column: 6/span 4 ;
+    grid-row-start: 4 ;
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    
+}
+
+.background-bartolome{
+    background-color: #acd7f5;
+    padding: 15px 15px;
+    border: solid black 1px;
+    border-radius: 2%;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 5/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+
+.background-360{
+    background-color: #427aa1;
+    padding: 15px 15px;
+    border: solid black 1px;
+    border-radius: 2%;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 10/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+.background-isabela{
+    background-color: #acd7f5;
+    padding: 15px 15px;
+    border: solid black 1px;
+    border-radius: 2%;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 15/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+
+.background-fe{
+    background-color: #427aa1;
+    padding: 15px 15px;
+    border: solid black 1px;
+    border-radius: 2%;
+    display: flex;
+    grid-column: 6/span 4;
+    width: 100%;
+    height: 90%;
+    grid-row: 20/ span 5;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+.card-img{
+    margin-right: 20px;
+    width: 300px;
+    height: 350px;
+    border: solid black 1px;
+}
+.card-text h3{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
+}
+.card-text p{
+    color: black;
+    font-size: 18px;
+    margin: 0 12px;
+}
+.img-container {
+    text-align: center;    
+}
+.img-container img{
+    margin-bottom: 25px;
+}
+.img-container a{
+    background-color: #e6c345;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border: solid black 1px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.img-container a:hover{
+    background-color: #facc27;
+}
+.buttom-box{
+    text-align: center ; 
+    background-color: white ;
+    
+    border: solid black 1px;
+    border-radius: 10%;
+    transition: transform 0.1s ease;
+}
+#buttom{
+    grid-column: 7/9 ;
+    grid-row-start: 25 ;
+    margin-top: 70px;
+    margin-left: 155px;
+    margin-right: 50px;
+    
+}
+.more{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.buttom-box:hover{
+    background-color: rgb(96, 167, 190);
+    transform: scale(1.1)
+    }

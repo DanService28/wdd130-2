@@ -66,3 +66,42 @@ document.addEventListener('DOMContentLoaded', function () {
     conditionsPopup.style.display = 'none';
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.card');
+  const totalCards = cards.length;
+  let currentIndex = 2;
+
+  function showCard(index) {
+      cards.forEach(card => card.classList.remove('active', 'prev', 'next', 'hidden'));
+
+      const prevIndex = (index - 1 + totalCards) % totalCards;
+      const nextIndex = (index + 1) % totalCards;
+
+      cards[prevIndex].classList.add('active', 'next');
+      cards[index].classList.add('active');
+      cards[nextIndex].classList.add('prev', 'hidden');
+      
+  }
+
+  function showNext() {
+      currentIndex = (currentIndex + 1) % totalCards;
+      showCard(currentIndex);
+  }
+
+  function showPrev() {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      showCard(currentIndex);
+  }
+
+  const nextButton = document.getElementById('nextButton');
+  const prevButton = document.getElementById('prevButton');
+
+  nextButton.addEventListener('click', showNext);
+  prevButton.addEventListener('click', showPrev);
+
+  showCard(currentIndex);
+});
+
+
