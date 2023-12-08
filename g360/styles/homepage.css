@@ -167,7 +167,7 @@ nav a:hover{
     grid-template-rows: 100vh 30px 100vh 100vh repeat(1, 100px);
 }
 .second-background{
-    background-color: rgba(11, 91, 148, 0.827);
+    background-color: rgb(69, 124, 243);
     grid-column: 1/-1;
     grid-row: 3/4;
 }
@@ -335,7 +335,7 @@ nav a:hover{
 }
 .tours-title h1{
     font-size: 80px;
-    color: #facc27;
+    color: #ffce1c;
     margin: 0;
 }
 .tours-title h3{
