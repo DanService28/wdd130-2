@@ -53,7 +53,7 @@
                     </ul>
             </div>
             <aside id="publicity">
-                <h2>Enjoy Last Offert</h2>
+                <h2>Offert</h2>
                 <img id= "offerts" src="images/penguin.jpg" alt="New Offert">
                 <p>Pinzon & Daphne</p>
                 <p>In a full day</p>
@@ -322,11 +322,13 @@
             </section>
         </main>
     </div>
-    <footer>
+    <footer class="footer-grid">
        <section>
             <h3>Frequently Questions</h3>
             <a href="contactus.html">
                 <p>What is the best time to travel?</p>
+            </a>
+            <a href="contactus.html">
                 <p>Cancellation policies</p>
             </a>
        </section> 
@@ -341,7 +343,7 @@
         </section> 
         <section>
             <h3>Contact Us</h3>
-            <p>+593 968895750</p>
+            <h2>+ 593 96-889-5750</p>
             <a href="contactus.html">    
                 <p>Other Ways</p>
             </a>
@@ -351,13 +353,30 @@
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </section> 
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var publicity = document.getElementById("publicity");
+          var initialPosition = publicity.offsetTop;
+    
+          window.addEventListener("scroll", function() {
+            var scrollPosition = window.scrollY;
+    
+            // Ajusta los estilos según el desplazamiento
+            var newPosition = initialPosition - scrollPosition;
+    
+            // Limita el desplazamiento hasta la fila de referencia (fila 12)
+            if (newPosition > 0) {
+              newPosition = 0;
+            }
+    
+            publicity.style.bottom = newPosition + "px";
+          });
+        });
+      </script>
 </body>
 </html>

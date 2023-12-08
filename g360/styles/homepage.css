@@ -1,7 +1,9 @@
 /* Style for the home page */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-
+*{
+    font-family: serif;
+}
 #content_home{
     max-width: 100%;
     margin: 0 auto;
@@ -167,7 +169,7 @@ nav a:hover{
     grid-template-rows: 100vh 30px 100vh 100vh repeat(1, 100px);
 }
 .second-background{
-    background-color: rgb(69, 124, 243);
+    background-color: rgb(85, 133, 236);
     grid-column: 1/-1;
     grid-row: 3/4;
 }
@@ -582,16 +584,33 @@ nav a:hover{
 
 
 
-.footer-grid {
+
+.footer-grid{
     display: grid;
     grid-template-columns: repeat(10, 10%);
-    grid-column: 2/9;
-    background-color: #089dd9;
+    grid-column: 2/-1;
+    background-color: #427aa1;
     color: black;
-    
+    font-weight: bold;
     margin-top: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: solid #427aa1 1px;
+    border: solid black 1px;
+}
+.footer-grid a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid h2{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid a:hover{
+    color: black;
+}
+.footer-grid img:hover{
+    opacity: 80%;
 }

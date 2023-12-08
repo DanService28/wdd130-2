@@ -1,3 +1,6 @@
+*{
+    font-family: serif;
+}
 header{   
     padding: 10px;
     display: grid;
@@ -165,28 +168,32 @@ button {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-grid {
+.footer-grid{
     display: grid;
     grid-template-columns: repeat(10, 10%);
-    grid-column: 2/9;
-    background-color: #089dd9;
+    grid-column: 2/-1;
+    background-color: #427aa1;
     color: black;
-    
+    font-weight: bold;
     margin-top: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: solid #427aa1 1px;
+    border: solid black 1px;
+}
+.footer-grid a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid h2{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid a:hover{
+    color: black;
+}
+.footer-grid img:hover{
+    opacity: 80%;
 }

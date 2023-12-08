@@ -1,3 +1,6 @@
+*{
+    font-family: serif;
+}
 header{   
     padding: 10px;
     display: grid;
@@ -72,10 +75,13 @@ header{
     color: #000;
     text-decoration: none;
 }
+.tours-menu a:hover{
+    color: #967500;
+}
 .daily-tour-grid{
     display: grid;
     grid-template-columns: repeat(17, 102px);
-    grid-template-rows: repeat(60, 100px);
+    grid-template-rows: repeat(58, 100px);
 }
 #section1{
     grid-area: 5/8/6/13;
@@ -239,45 +245,44 @@ header{
     margin-top: 30px;
 }
 #publicity{
-    grid-area: 12/2/16/5;
+    grid-area: 12/2/15/6;
     margin-left: 25px;
-    display: inline;
+    position: relative;;
+    margin-top: 20px;
 }
 #publicity img{
-    width: 450px;
-    scroll-behavior:auto;
+    width: 400px;
 }
 #publicity h2:nth-of-type(1){
     position: absolute;
-    left: 7.75%;
     background-color: #e6c345;
-    padding: 0px 134px;
+    padding: 0px 168px;
 }
 #publicity p:nth-of-type(1){
     position: absolute;
-    top: 185%;
+    margin-top: -150px;
     font-size: 35px;
     font-weight: bold;
     margin-left: 10px;
-    color: black;
+    color: rgb(230, 227, 227);
 }
 #publicity p:nth-of-type(2){
     position: absolute;
-    top: 190%;
     font-size: 25px;
     margin-left: 10px;
-    color: black;
+    color: rgb(233, 233, 233);
     font-weight: bold;
+    margin-top: -100px;
 }
 #publicity h2:nth-of-type(2){
     position: absolute;
-    left: 26%;
+    margin-top: -125px;
+    right: -8%;
     border: solid black 3px;
     background-color: #e6c345;
     padding: 35px 25px;
     border-radius: 50%;
     font-size: 35px;
-    top: 182%;
 }
 
 
@@ -314,6 +319,9 @@ header{
     text-decoration: none;
     color: #000;
 }
+.tour-subpage h3:hover{
+    text-decoration:underline;
+}
 .tour-subpage{
     text-decoration: none;
 }
@@ -344,12 +352,18 @@ header{
 .buttom-box{
     position: absolute;
 }
+.buttom-box:hover{
+    opacity: 85%;
+}
 .subpage-buttom{
     text-decoration: none;
     position: absolute;
     margin-left: 50px;
     width: 110px;
     margin-top: -26px;
+}
+.subpage-buttom:hover{
+    opacity: 85%;
 }
 .subpage-buttom p{
     font-size: 20px;
@@ -364,4 +378,35 @@ header{
     border-bottom: black solid 1px;
     display: inline;
     font-weight: bold;
+}
+
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-column: 2/-1;
+    background-color: #427aa1;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black 1px;
+}
+.footer-grid a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid h2{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-grid a:hover{
+    color: black;
+}
+.footer-grid img:hover{
+    opacity: 80%;
 }
