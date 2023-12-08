@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Tour</title>
+    <link rel="stylesheet" href="styles/dailytour.css">
 </head>
 <body>
     <div id="content_home">
         <header>
             <a id="logo_link" href="index.html">
-                <img id="logo" src="images/g360_adventures" alt="G360 Logo">
+                <img id="logo" src="images/g360_adventures.png" alt="G360 Logo">
             </a>
-            <nav>
+            <nav class="nav-header">
                 <a href="index.html">Home</a>
                 <a href="dailytour.html">Daily Tour</a>
                 <a href="diving.html">Diving</a>
@@ -19,22 +20,49 @@
             </nav>
         </header>
         <main class="daily-tour-grid">
-            <nav class="tours menu">
+            <div class="gallery-container">
+                <img class="gallery-images" src="images/isabela_turtle.png" alt="">
+                <img class="gallery-images" src="images/isabela_piquero.png" alt="">
+                <img class="gallery-images" src="images/isabela_name.png" alt="">
+                <img class="gallery-images" src="images/isabela_atardecer.png" alt="">
+                <img class="gallery-images" src="images/isabela_iguana.png" alt="">
+                <img class="gallery-images" src="images/isabela_piquero.png" alt="">
+                
+            </div>
+            <nav class="tours-menu">
                 <a href="#section1">Isabela</a>
                 <a href="#section2">San Cristobal</a>
                 <a href="#section3">Santa Cruz</a>
                 <a href="#section4">Daily Fishing</a>
             </nav>
+            <div class="about-us">
+                <h1>About Us</h1>
+                <p>In G360 Adventures we take pride in being your gateway to the incomparable
+                    wonders of the Galapagos Islands. We are more than just an adventure agency;
+                    we are passionate explorers and nature lovers committed to providing you with a 
+                    unique and unforgettable experience in this natural paradise.<br>
+                    At the heart of our mission is a strong belief that the true magic of the 
+                    Galapagos Islands is only revealed to those who venture beyond the conventional. 
+                    We strive to create carefully crafted itineraries that immerse you in the biological 
+                    richness, unique diversity, and indescribable beauty of this archipelago. In G360 Adventures
+                    you would notice:</p>
+                    <ul>
+                        <li>Passion for Preservation.</li>
+                        <li>Team of Local Experts.</li>
+                        <li>Personalized Experiences.</li>
+                    </ul>
+            </div>
             <aside id="publicity">
                 <h2>Enjoy Last Offert</h2>
                 <img id= "offerts" src="images/penguin.jpg" alt="New Offert">
-                <p>Isabela Full Day</p>
-                <h2>-25%</h2>                
+                <p>Pinzon & Daphne</p>
+                <p>In a full day</p>
+                <h2>165$</h2>                
             </aside>
 
-            <h2 id="section1">Isabela</h2>
-            <img class="daily-images" src="images/penguins.jpg" alt="Tintoreras">
-            <section class="tintoreras-day">
+            <h2 id="section1">Isabela - Puerto Villamil</h2>
+            <img class="daily-images is1" src="images/penguins.jpg" alt="Tintoreras">
+            <section class="card-tour tintoreras-day">
                 <a class="tour-subpage" href="tintoreras-tour.html" target="_blank">
                     <h3>Tintoreras Islote</h3>
                 </a>
@@ -49,9 +77,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">140$ per adult</p>
+                <a class="subpage-buttom" href="tintoreras-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/roca_union.jpg" alt="Tunnels">
-            <section class="tunnels-day">
+            <img class="daily-images is2" src="images/roca_union.png" alt="Tunnels">
+            <section class="card-tour tunnels-day">
                 <a class="tour-subpage" href="tunnels-tour.html" target="_blank">
                     <h3>Tunnels</h3>
                 </a>
@@ -67,9 +98,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">145$ per adult</p>
+                <a class="subpage-buttom" href="tunnels-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/volcano.jpg" alt="Volcano">
-            <section class="volcano-day">
+            <img class="daily-images is3" src="images/volcano.png" alt="Volcano">
+            <section class="card-tour volcano-day">
                 <a class="tour-subpage" href="volcano-tour.html" target="_blank">
                     <h3>Sierra Negra and Chico</h3>
                 </a>
@@ -82,14 +116,17 @@
                     volcanic landscapes.
                 </p>
                 <div class="buttom-box">
-                    <a class="book" href="contactus.html">Book</a>
+                    <a class="book" href="contactus.html">Book</a>    
                 </div>
                 <p class="price">55$ per adult</p>
+                <a class="subpage-buttom" href="volcano-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
 
-            <h2 id="section2">San Cristobal</h2>
-            <img class="daily-images" src="images/kicker_rock.jpg" alt="360 View">
-            <section class="360-day">
+            <h2 id="section2">San Cristobal - Puerto Baquerizo Moreno</h2>
+            <img class="daily-images sc1" src="images/kicker_rock.png" alt="360 View">
+            <section class="card-tour t360-day">
                 <a class="tour-subpage" href="360-tour.html" target="_blank">
                     <h3>360 Tour</h3>
                 </a>
@@ -104,9 +141,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">185$ per adult</p>
+                <a class="subpage-buttom" href="360-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/piquero.jpeg" alt="Junco">
-            <section class="junco-day">
+            <img class="daily-images sc2" src="images/piquero.png" alt="Junco">
+            <section class="card-tour junco-day">
                 <a class="tour-subpage" href="junco-lagoon.html" target="_blank">
                     <h3>Junco Lagoon</h3>
                 </a>
@@ -122,11 +162,14 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">65$ per adult</p>
+                <a class="subpage-buttom" href="junco-lagoon.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
 
-            <h2 id="section3">Santa Cruz</h2>
-            <img class="daily-images" src="images/sea_lion.jpeg" alt="Bay Tour">
-            <section class="bay-day">
+            <h2 id="section3">Santa Cruz - Puerto Ayora</h2>
+            <img class="daily-images sp1" src="images/blue.png" alt="Bay Tour">
+            <section class="card-tour bay-day">
                 <a class="tour-subpage" href="bay-tour.html" target="_blank">
                     <h3>Bay Tour</h3>
                 </a>
@@ -142,9 +185,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">40$ per adult</p>
+                <a class="subpage-buttom" href="bay-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/turtle.jpg" alt="Highland">
-            <section class="highland">
+            <img class="daily-images sp2" src="images/turtle.png" alt="Highland">
+            <section class="card-tour highland">
                 <a class="tour-subpage" href="highland.html" target="_blank">
                     <h3>Highland Tour</h3>
                 </a>
@@ -160,11 +206,14 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">40$ per adult</p>
+                <a class="subpage-buttom" href="highland.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
 
-            <h2 id="section4">Daily Fishing</h2>
-            <img class="daily-images" src="images/bartolome.jpg" alt="Bartolome">
-            <section class="bartolome-day">
+            <h2 id="section4">Daily Fishing - Some Islands</h2>
+            <img class="daily-images df1" src="images/bartolome.png" alt="Bartolome">
+            <section class="card-tour bartolome-day">
                 <a class="tour-subpage" href="bartolome-tour.html" target="_blank">
                     <h3>Bartolome Island</h3>
                 </a>
@@ -180,9 +229,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">255$ per adult</p>
+                <a class="subpage-buttom" href="bartolome-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/frigate.jpg" alt="Seymour">
-            <section class="seymour-day">
+            <img class="daily-images df2" src="images/frigate.png" alt="Seymour">
+            <section class="card-tour seymour-day">
                 <a class="tour-subpage" href="seymour-tour.html" target="_blank">
                     <h3>Seymour Island</h3>
                 </a>
@@ -199,9 +251,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">245$ per adult</p>
+                <a class="subpage-buttom" href="tintoreras-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/santa_fe.jpg" alt="Santa Fe">
-            <section class="santa-fe-day">
+            <img class="daily-images df3" src="images/santa_fe.png" alt="Santa Fe">
+            <section class="card-tour santa-fe-day">
                 <a class="tour-subpage" href="santa-fe-tour.html" target="_blank">
                     <h3>Santa Fe Island</h3>
                 </a>
@@ -217,9 +272,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">140$ per adult</p>
+                <a class="subpage-buttom" href="tintoreras-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/" alt="Pinzon">
-            <section class="pinzon-day">
+            <img class="daily-images df4" src="images/birds.png" alt="Pinzon">
+            <section class="card-tour pinzon-day">
                 <a class="tour-subpage" href="pinzon-tour.html" target="_blank">
                     <h3>Pinzon Island</h3>
                 </a>
@@ -236,9 +294,12 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">140$ per adult</p>
+                <a class="subpage-buttom" href="tintoreras-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
-            <img class="daily-images" src="images/island.jpg" alt="Daphne">
-            <section class="daphne-day">
+            <img class="daily-images df5" src="images/island.png" alt="Daphne">
+            <section class="card-tour daphne-day">
                 <a class="tour-subpage" href="daphne-tour.html" target="_blank">
                     <h3>Daphne Tour</h3>
                 </a>
@@ -255,6 +316,9 @@
                     <a class="book" href="contactus.html">Book</a>
                 </div>
                 <p class="price">135$ per adult</p>
+                <a class="subpage-buttom" href="tintoreras-tour.html" target="_blank">
+                    <p>Descripcion</p>
+                </a>
             </section>
         </main>
     </div>
