@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
+//JS para las tarjetas de tour
 document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('.card');
   const totalCards = cards.length;
-  let currentIndex = 2;
+  let currentIndex = 0;
 
   function showCard(index) {
       cards.forEach(card => card.classList.remove('active', 'prev', 'next', 'hidden'));
