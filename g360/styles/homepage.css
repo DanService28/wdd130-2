@@ -169,7 +169,7 @@ nav a:hover{
     grid-template-rows: 100vh 30px 100vh 100vh repeat(1, 100px);
 }
 .second-background{
-    background-color: rgb(85, 133, 236);
+    background-color: #0d6b91;
     grid-column: 1/-1;
     grid-row: 3/4;
 }

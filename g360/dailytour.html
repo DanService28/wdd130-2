@@ -57,7 +57,7 @@
                 <img id= "offerts" src="images/penguin.jpg" alt="New Offert">
                 <p>Pinzon & Daphne</p>
                 <p>In a full day</p>
-                <h2>165$</h2>                
+                <h2><a class="nostyle" href="contactus.html">165$</a></h2>                
             </aside>
 
             <h2 id="section1">Isabela - Puerto Villamil</h2>
@@ -361,15 +361,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
           var publicity = document.getElementById("publicity");
-          var initialPosition = publicity.offsetTop;
+          var initialPosition = publicity.offsetTop -20;
     
           window.addEventListener("scroll", function() {
             var scrollPosition = window.scrollY;
-    
-            // Ajusta los estilos según el desplazamiento
             var newPosition = initialPosition - scrollPosition;
     
-            // Limita el desplazamiento hasta la fila de referencia (fila 12)
+            
             if (newPosition > 0) {
               newPosition = 0;
             }

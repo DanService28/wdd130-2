@@ -4,7 +4,7 @@
 header{   
     padding: 10px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 1fr 30%;
     background-color: #427aa1;    
 }
 #logo{
@@ -45,12 +45,12 @@ nav a:hover{
     grid-template-columns: 50% 50%;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color:aliceblue;
+    background-color:rgb(165, 207, 243);
+    border: black solid 1px
 }
 form{  
     width: 450px;
     padding: 1em;
-    border: 1px solid #ccc;
     border-radius: 1em;
 }
 ul{
@@ -83,14 +83,13 @@ button {
     padding: 8px;
     background-color: #e6c345;
     font-size: 15px;
+    position: relative;
+    left: 50%;
 }
 .read-policies{
     grid-column: span 2;
     text-align: center;
 }
-
-
-
 .contact-info{
     margin-left: 70px;
 }    
@@ -112,6 +111,7 @@ button {
 .gmail p{
     margin-left: 15px;
     font-size: 20px;
+    font-weight: bold;
 }
 .whatsapp{
     display: flex;
@@ -119,24 +119,15 @@ button {
     margin-right: 20px;
     font-size: 20px;
 }
-
-    
-   
-
-
-
-
-
-
-
-
-
+.whatsapp p{
+    font-weight: bold;
+}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -144,6 +135,9 @@ button {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 18px;
+    position: relative;
+    left: 0%;
   }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
@@ -156,6 +150,7 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    font-size: 20px;
   }
 .accordion::after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -166,6 +161,28 @@ button {
   }
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+#policies-section{
+    background-color: rgb(165, 207, 243);
+    border: solid black 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#policies-section h3{
+    font-size: 22px;
+    margin-left: 60px;
+}
+#policies-section p{
+    margin-left: 20px ;
+    font-size: 18px;
+}
+#policies-section p:nth-of-type(2){
+    font-weight: bold;
+    margin-left: 40px;
+}
+#policies-section p:nth-of-type(3){
+    font-weight: bold;
+    margin-left: 40px;
 }
 
 .footer-grid{
