@@ -4,7 +4,7 @@
 header{   
     padding: 10px;
     display: grid;
-    grid-template-columns: 30% 1fr 30%;   
+    grid-template-columns: 510px 680px 510px;   
     font-family: serif; 
     background-color: #427aa1;
     border-bottom: white solid 1px;
