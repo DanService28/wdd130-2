@@ -1,10 +1,12 @@
 *{
     font-family: serif;
+    max-width: 1700px;
+    
 }
 header{   
     padding: 10px;
     display: grid;
-    grid-template-columns: 510px 680px 510px;   
+    grid-template-columns: 30% 40% 30%;   
     font-family: serif; 
     background-color: #427aa1;
     border-bottom: white solid 1px;
@@ -35,7 +37,7 @@ header{
     
 }
 .gallery-container{
-    width: 1700px;
+    grid-column: 1/18;
     text-align: center;
     background-color: #427aa1;
     height: 350px;
@@ -80,7 +82,7 @@ header{
 }
 .daily-tour-grid{
     display: grid;
-    grid-template-columns: repeat(17, 102px);
+    grid-template-columns: repeat(17, 5.882%);
     grid-template-rows: repeat(58, 100px);
 }
 #section1{
