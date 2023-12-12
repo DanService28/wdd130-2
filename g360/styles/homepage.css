@@ -5,12 +5,12 @@
     font-family: serif;
 }
 #content_home{
-    max-width: 100%;
+    max-width: 1700px;
     margin: 0 auto;
 }
 #hero {
     display: grid;
-    width: 100%;
+    width: 1700px;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh;
     margin-top: -100px;
@@ -32,31 +32,31 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 20px; /* Ajusta el espacio alrededor del contenido */
-    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    padding: 0 20px; 
+    height: 110%; 
     box-sizing: border-box;
 }
 .hero-int h1:nth-of-type(1){
-    font-size: 65px ;
+    font-size: 44px ;
     color: #acd7f5;
     margin: 0;
     margin-left: 25px;
 }
 .hero-int h1:nth-of-type(2){
-    font-size: 95px;
+    font-size: 70px;
     color: #facc27;
     margin: 0;
     margin-left: 25px;
 }
 .hero-int h1:nth-of-type(3){
-    font-size: 65px;
+    font-size: 44px;
     color: #acd7f5;
     margin: 0;
     margin-left: 25px;
 }
 .hero-int p{
     width: 390px;
-    font-size: 25px;
+    font-size: 21px;
     color: white;
     margin-left: 25px;
 }
@@ -67,23 +67,26 @@
     border: solid black 1px;
     border-radius: 15px;
 }
+.buttom-box-1 a{
+    font-size: 20px;
+}
 
 
 .form-container {
     position: fixed;
     top: 32%;
     left: 100%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
     background-color: #427aa1;
-    padding: 20px;
+    padding: 15px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
     display: flex; 
     align-items: center;
-    width: 320px;
-    max-width: 400px;
+    width: 350px;
+    max-width: 250px;
     margin: 0 auto;
-    z-index: 19;
+    z-index: 4;
 }
 body, html {
     height: 100%;
@@ -94,7 +97,7 @@ body, html {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     padding-right: 10px; 
-    font-size: 24px; 
+    font-size: 15px; 
     color: white 
 }
 label {
@@ -105,27 +108,27 @@ label {
 input,
 textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 button {
     background-color: #e6c345;
     color: black;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: none;
     cursor: pointer;
 }
 textarea{
-    height: 100px;
+    height: 70px;
 }
-header{   
-    padding: 10px;
+header{    
+    padding: 4px;
     display: grid;
-    grid-template-columns: 30% 1fr 30%;   
+    grid-template-columns: 30% 40% 30%;   
     font-family: serif; 
-    
 }
+
 #logo{
     width: 40px;
     z-index: 1;
@@ -135,7 +138,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 19px;
     align-items: center;
     z-index: 2;
    
@@ -148,7 +151,7 @@ nav a{
 }
 nav a:nth-of-type(1){
     background-color: #e6c345;
-    padding: 10px;
+    padding: 2px;
     border-radius: 5%;
     color: black;
     
@@ -159,7 +162,7 @@ nav:hover a {
 }
 nav a:hover{
     background-color: #e6c345;
-    padding: 10px;
+    padding: 2px;
     color: black;
     border-radius: 5%;
 }
@@ -266,7 +269,7 @@ nav a:hover{
     font-family: serif;
 }
 .sect-gallery h1{
-    font-size: 75px ;
+    font-size: 35px ;
     color: #ffce1c;
     margin: 0;
     margin-left: 25px;
@@ -336,42 +339,43 @@ nav a:hover{
     
 }
 .tours-title h1{
-    font-size: 80px;
+    font-size: 60px;
     color: #ffce1c;
     margin: 0;
 }
 .tours-title h3{
-    font-size: 45px ;
+    font-size: 40px ;
     color: #acd7f5;
     margin: 0;
     text-align: left;
     margin-left: 100px;
-    margin-bottom: -25px;
+    margin-bottom: -20px;
 }
 .tours-title p{
-    width: 700px;
-    margin-left: 85px;
+    width: 500px;
+    margin-left: 80px;
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 .comment-user{
     border: #f2f2f204 solid 1px;
     margin-left: 75px ;
-    width: 740px;
+    width: 520px;
     background-color: #8ec0e4;
-    height: 180px;
+    height: 160px;
+    border-radius: 2%;
 }
 .comment-user h3{
     margin-left: 5px;
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     border-bottom: solid black 1px ;
 }
 .comment-user p{
     margin-left: 5px;
     margin-top: 25px;
-    font-size: 22px;
+    font-size: 17px;
     color: #000;
 }
 .star::before {
@@ -383,26 +387,29 @@ nav a:hover{
   }
 .buttom-box-2{
     background-color: #facc27;
-    padding: 8px;
-    border: solid black 1px;
-    border-radius: 15px;
+    padding: 4px;
+    border-radius: 10px;
     display: inline;
     float: left;
     margin-left: 100px;
 }
+.buttom-box-2 a{
+    font-size: 18px;
+}
 .buttom-box-3{
     position: absolute;
-    margin-top: 60px;
-    margin-left: 100px;
+    margin-left: 200px;
     background-color: #acd7f5;
-    padding: 10px;
-    border: solid black 1px;
-    border-radius: 15px;
+    padding: 2px 2px;
+    border-radius: 10px;
     font-size: 25px;
+    margin-top: -2px;
+    text-align: center;
 }
 .buttom-box-3 a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 .card-container{
     grid-column: 4/span 4 ;
