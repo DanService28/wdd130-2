@@ -1,11 +1,11 @@
 *{
     font-family: serif;
-    max-width: 1700px;
+    max-width: 1750px;
     margin: 0 auto;
     
 }
 header{   
-    padding: 10px;
+    padding: 4px;
     display: grid;
     grid-template-columns: 30% 40% 30%;   
     font-family: serif; 
@@ -22,7 +22,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 19px;
     align-items: center;
     z-index: 2;  
 }   
@@ -32,7 +32,7 @@ header{
 }
 .nav-header a:nth-of-type(2){
     background-color: #e6c345;
-    padding: 10px;
+    padding: 2px;
     border-radius: 5%;
     color: black;
     
@@ -42,11 +42,12 @@ header{
     width: 100%;
     text-align: center;
     background-color: #427aa1;
-    height: 350px;
+    height: 250px;
     
 }
 .gallery-images{
     margin: 2px 5px;
+    width: 200px;
 }
 
 .nav-header:hover a {
@@ -55,7 +56,7 @@ header{
 }
 .nav-header a:hover{
     background-color: #e6c345;
-    padding: 10px;
+    padding: 2px;
     color: black;
     border-radius: 5%;
 }
@@ -63,7 +64,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 19px;
     align-items: center;
     z-index: 2;
     background-color: white;
@@ -71,9 +72,10 @@ header{
     border-bottom: solid black 1px ;
     border-top: solid black 1px ;
     grid-column: 1/ -1;
-    grid-row-start: 4;
-    height: 50px;
-    margin-top: 10px;
+    grid-row-start: 3;
+    height: 40px;
+    margin-top:40px;
+    
 }
 .tours-menu a{
     color: #000;
@@ -88,142 +90,165 @@ header{
     grid-template-rows: repeat(58, 100px);
 }
 #section1{
-    grid-area: 5/8/6/13;
+    grid-area: 4/6/5/13;
     color: black;
-    font-size: 30px;
-    margin-top: 10px
+    font-size: 21px;
+    margin-top: 10px;
+    text-align: left;
 
 }
 .daily-images{
     grid-column-start: 8;
-    width: 400px;
+    width: 290px;
     margin-top: 10px;
     
 }
 .tintoreras-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 6/ span 4;
-    margin-top: -15px; 
-    height: 74%;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 4/ span 2;
+    margin-top: 60px; 
+    height:103%;
     margin-left: 10px;
 }
 .tunnels-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 9/ span 4;
-    margin-top: 40px;
-    height: 87%;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 7/ span 2;
+    margin-top: 10px;
+    height: 112%;
     margin-left: 10px;
     ;
 }
 .volcano-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 13/ span 4;
-    margin-top: 47px;
-    height: 88%;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 10/ span 3;
+    margin-top: -15px;
+    height: 75%;
     margin-left: 10px;
 }
 #section2{
-    grid-area: 18/8/19/13;
+    grid-area: 13/8/15/13;
     color: black;
-    font-size: 30px;
-    margin-top: -20px;
-    margin-left: 10px;
+    font-size: 21px;
+    margin-top: -25px;
+    text-align: left;
+    
 }
 .t360-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 18/ span 4;
-    margin-top: 75px;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 13/ span 2;
+    margin-top: 40px;
     margin-left: 10px;
+    height: 100%;
 }
 .junco-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 22/ span 4;
-    margin-top: 25px;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 16/ span 3;
+    margin-top: -10px;
     margin-left: 10px;
+    height: 82%;
 }
 #section3{
-    grid-area: 26/8/27/13;
+    grid-area: 19/6/21/13;
     color: black;
-    font-size: 30px;
-    z-index: 99;
-    margin-top: 30px;
+    font-size: 21px;
+    text-align: left;
+    
+    
 }
 .bay-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 27/ span 4;
+    grid-column: 12/span 6;
+    width: 85%;
+    height: 82%;
+    grid-row: 19/ span 3;
     margin-left: 10px;
+    margin-top: 45px;
 }
 .highland{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 31/ span 4;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 22/ span 3;
     margin-top: 25px   ;
-    height: 92%;
+    height: 82%;
+    margin-top: 40px;
     margin-left: 10px;
 }
 #section4{
-    grid-area: 36/8/36/13;
+    grid-area: 25/8/29/13;
     color: black;
-    font-size: 30px;
-    z-index: 99;
-    margin-top: -35px;
+    font-size: 21px;
+    margin-top: 40px;
     margin-left: 10px;
 }
 .bartolome-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 36/ span 4;
-    margin-top: 25px;
-    height: 80%;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 26/ span 2;
+    margin-top: -10px;
+    height: 102%;
     margin-left: 10px;
 }
 .seymour-day{
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 40/ span 4;
+    grid-column: 12/span 6;
+    width: 85%;
+    height: 89%;
+    grid-row: 28/ span 3;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+.pinzon-day{
+    padding: 15px 15px;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 31/ span 3;
+    margin-top: 60px;
+    height: 88%;
     margin-left: 10px;
 }
 .santa-fe-day{
-    padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 44/ span 4;
-    margin-top: 20px;
-    height: 80%;
-    margin-left: 10px;
-}
-.pinzon-day{
     padding: 15px 15px; 
-    grid-column: 12/span 5;
-    grid-row: 48/ span 4;
+    grid-column: 12/span 6;
+    width: 85%;
+    height: 75%;
+    grid-row: 35/ span 3;
     margin-left: 10px;
+    margin-top: -25px;
     
 }
 .daphne-day{   
     padding: 15px 15px;
-    grid-column: 12/span 5;
-    grid-row: 52/ span 4;
-    margin-top: 25px;
-    height: 100%;
+    grid-column: 12/span 6;
+    width: 85%;
+    grid-row: 38/ span 3;
+    height: 88%;
     margin-left: 10px;
+    margin-top: -49px;
     
 }
 .is1{
-    grid-row-start: 6;
-    margin-top: -18px;
+    grid-row-start: 5;
+    margin-top: -40px;
 }
 .is2{
-    grid-row-start: 9;
-    margin-top: 45px;
+    grid-row-start: 7;
+    margin-top: 36px;
 
 }
 .is3{
-    grid-row-start: 13;
+    grid-row-start: 10;
     margin-top: 50px;
 }
 .sc1{
@@ -258,43 +283,44 @@ header{
     margin-top: 30px;
 }
 #publicity{
-    grid-area: 12/2/15/6;
-    margin-left: 25px;
+    grid-area: 9/2/13/6;
+    margin-top: 20px;
+    margin-left: 30px;
     position: relative;;
 }
 #publicity img{
-    width: 400px;
+    width: 325px;
 }
 #publicity h2:nth-of-type(1){
     position: absolute;
     background-color: #e6c345;
-    padding: 0px 168px;
+    padding: 0px 130.5px;
 }
 #publicity p:nth-of-type(1){
     position: absolute;
-    margin-top: -150px;
-    font-size: 35px;
+    margin-top: -110px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 10px;
     color: rgb(230, 227, 227);
 }
 #publicity p:nth-of-type(2){
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 10px;
     color: rgb(233, 233, 233);
     font-weight: bold;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 #publicity h2:nth-of-type(2){
     position: absolute;
-    margin-top: -125px;
-    right: -8%;
+    margin-top: -90px;
+    right: -9%;
     border: solid black 3px;
     background-color: #e6c345;
-    padding: 35px 25px;
+    padding: 25px 15px;
     border-radius: 50%;
-    font-size: 35px;
+    font-size: 30px;
 }
 #publicity h2:nth-of-type(2):hover{
     background-color: #fac60c;
@@ -309,32 +335,35 @@ header{
 
 .about-us{
     grid-column-start: 2;
-    grid-row-start: 5 ;
-    width: 450px;
-    height: 545px;
+    grid-row-start: 4 ;
+    width: 350px;
+    height: 410px;
     border: solid black 1px;
     text-align: center;
     padding: 20px;
     border-radius: 5%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .about-us h1{
     border-bottom: solid black 1px;
     display: inline;
+    font-size: 21px;
 }
 .about-us p{
     text-align: justify;
-    font-size: 22px;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .about-us li{
     margin: 0;
     text-align: left;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: bold;
 }
 .tour-subpage h3{
-    font-size: 25px;
+    font-size: 19px;
     margin-top: -2px;
     text-align: center;
     text-decoration: none;
@@ -348,12 +377,14 @@ header{
 }
 .summary{
     text-align: center;
-    font-size: 18px;
-    margin-top: 1%;
+    font-size: 15px;
+    margin-top: 1px;
+    ;
     border-bottom: #000 solid 1px;
 }
 .info-tour{
-    font-size: 22px;
+    margin-top: 5px;
+    font-size: 17px;
     text-align: justify;
 }
 .card-tour{
@@ -363,16 +394,17 @@ header{
 }
 .book{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     background-color: #e6c345;
-    padding: 8px;
-    border: solid black 1px;
+    padding: 6px;
+    
     border-radius: 20%;
 }
 .buttom-box{
     position: absolute;
-    margin-top: 35px;
+    margin-top: 24px;
+    margin-left: 25px ;
 }
 .buttom-box:hover{
     opacity: 85%;
@@ -381,28 +413,28 @@ header{
     text-decoration: none;
     position: absolute;
     margin-left: 250px;
-    width: 110px;
-    margin-top: -30px;
+    width: 105px;
+    margin-top: -25px;
+    text-align: center;
 }
 .subpage-buttom:hover{
     opacity: 85%;
 }
 .subpage-buttom p{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     background-color: #e6c345;
     padding: 5px;
-    border: solid black 1px;
     border-radius: 12%;
 }
 .price{
-    margin-left: 70px;
+    margin-left: 80px;
     border-bottom: black solid 1px;
     display: block;
     font-weight: bold;
-    margin-right: 250px;
-    margin-top: 40px;
-    
+    margin-right: 210px;
+    margin-top: 26px;
+    font-size: 14px;
 }
 
 
