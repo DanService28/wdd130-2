@@ -46,8 +46,9 @@ header{
     
 }
 .gallery-images{
-    margin: 2px 5px;
-    width: 200px;
+    margin: 0.5px 2px;
+    width: 173px;
+    margin-top: 3px;
 }
 
 .nav-header:hover a {
