@@ -11,7 +11,7 @@
 #hero {
     display: grid;
     width: 1700px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1700px;
     grid-template-rows: 100vh;
     margin-top: -100px;
     font-family: serif;
@@ -180,14 +180,13 @@ nav a:hover{
     box-sizing:border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
 .container {
     grid-column-start: 1;
     grid-row-start: 3;
-    width: 800px;
-    max-width: 800px;
+    width: 580px;
+    max-width: 700px;
     max-height: 600px;
-    margin-top: 110px;
+    margin-top: 75px;
     margin-left: 100px;
 }
 
@@ -262,27 +261,36 @@ nav a:hover{
 }
 
 .gallery-title{
-    grid-column: 7/10;
-    grid-row-start: 3;
-    margin-top: 160px;
+    grid-column: 6/10;
+    grid-row-start: 2;
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: -20px;
     text-align: center;
     font-family: serif;
+    text-align: right;
 }
 .sect-gallery h1{
-    font-size: 35px ;
+    font-size: 43px ;
     color: #ffce1c;
     margin: 0;
-    margin-left: 25px;
+    
 }
 .sect-gallery h2{
-    font-size: 37px;
+    font-size: 35px;
     color: #badffa;
     margin: 0;
     margin-left: 25px;
 }
 .sect-gallery p{
-    font-size: 28px;
+    font-size: 20px;
     color: white;
+}
+.images-icon{
+    margin-right: 120px;
+}
+.images-icon img{
+    width: 40px;
 }
 .popup {
   display: none;
@@ -320,7 +328,7 @@ nav a:hover{
     text-decoration: none;
     color: black;
     cursor: pointer;
-    margin-left: 25px;
+    margin-right: 40px;
 }
   
 .refconditions:hover {
@@ -332,7 +340,7 @@ nav a:hover{
 }
 .tours-title{
     grid-row: 1/2 ;
-    margin-top: 120px;
+    margin-top: 90px;
     z-index: 2;
     grid-column: 1/6;
     text-align: center;
@@ -412,15 +420,16 @@ nav a:hover{
     font-size: 18px;
 }
 .card-container{
-    grid-column: 4/span 4 ;
+    grid-column: 5/span 3 ;
     grid-row: 1/ span 1;
     display: flex;
     left: 40%;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 900px;
+    width: 600px;
     justify-content: center;
+    margin-top: 25px;
     
 }
 
@@ -431,9 +440,9 @@ nav a:hover{
     padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    width: 445px;
-    height: 672px;
-    margin-top: 10%;
+    width: 340px;
+    height: 500px;
+    margin-top: 12%;
     right: 35%;
     position: absolute;
 
@@ -446,10 +455,10 @@ nav a:hover{
     padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    right: 25%;
-    width: 445px;
-    height: 672px;
-    margin-top: 10%;
+    right: 29%;
+    width: 350px;
+    height: 500px;
+    margin-top: 12%;
     position: absolute;
     opacity: 0.1;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -461,10 +470,10 @@ nav a:hover{
     padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    width: 445px;
-    height: 672px;
-    margin-top: 10%;
-    right: 10%;
+    width: 350px;
+    height: 500px;
+    margin-top: 12%;
+    right: 19%;
     position: absolute;
 
     opacity: 0.1;
@@ -476,13 +485,13 @@ nav a:hover{
     padding: 15px 15px;
     border: solid black 1px;
     border-radius: 2%;
-    width: 445px;
-    height: 672px;
-    margin-top: 10%; 
+    width: 350px;
+    height: 500px;
+    margin-top: 12%;
     position: absolute;
     opacity: 0.5;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    left: 5%;
+    left: 0.1%;
 }
 
 .card.hidden {
@@ -510,25 +519,33 @@ nav a:hover{
 }
 .button-container-card {
     position: absolute;
-    bottom: 4%;
-    right: 42%;
+    bottom: 0%;
+    right: 46%;
 }
-
+#prevButton:hover{
+    background-color: #8ec0e4;
+}
+#nextButton:hover{
+    background-color: #8ec0e4;
+}
 .card-img{
-    margin-right: 20px;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 270px;
     border: solid black 1px;
+
 }
 .card-text h3{
     color: aliceblue;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin-right: 15px;
+    margin-top: -20px;
 }
 .card-text p{
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: -19px;
+    margin-bottom: 10px;
+    text-align: justify;
     
 }
 .img-container {
@@ -541,10 +558,10 @@ nav a:hover{
     background-color: #e6c345;
     text-decoration: none;
     color: black;
-    padding: 8px;
-    border: solid black 1px;
+    padding: 5px;
     border-radius: 10%;
-    font-size: 20px;
+    font-size: 16px;
+    
     
 }
 .buttom-in-card:hover{
