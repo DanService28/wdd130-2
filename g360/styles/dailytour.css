@@ -88,7 +88,7 @@ header{
 .daily-tour-grid{
     display: grid;
     grid-template-columns: repeat(17, 5.882%);
-    grid-template-rows: repeat(58, 100px);
+    grid-template-rows: repeat(41, 100px);
 }
 #section1{
     grid-area: 4/6/5/13;
@@ -242,46 +242,53 @@ header{
 .is1{
     grid-row-start: 5;
     margin-top: -40px;
+    height: 235px;
 }
 .is2{
     grid-row-start: 7;
-    margin-top: 36px;
+    height: 255px;
 
 }
 .is3{
     grid-row-start: 10;
-    margin-top: 50px;
+    margin-top: -15px;
+    height: 255px;
 }
 .sc1{
-    grid-row-start: 19;
-    margin-top: -30px;
+    grid-row-start: 13;
+    margin-top: 40px;
+    height: 230px;
 }
 .sc2{
-    grid-row-start: 22;
-    margin-top: 25px;
+    grid-row-start: 16;
+    margin-top: -10px;
 }
 .sp1{
-    grid-row-start: 27;
-    margin-top: -1px;
+    grid-row-start: 20;
+    margin-top: -52px;
 }
 .sp2{
-    grid-row-start: 31;
-    margin-top: 40px;
+    grid-row-start: 22;
+    margin-top: 43px;
 }
 .df1{
-    grid-row-start: 36 ;
-    margin-top: 25px;
+    grid-row-start: 26 ;
+    margin-top: -10px;
+    height: 235px;
 }
 .df2{
-    grid-row-start: 40 ;
+    grid-row-start: 28 ;
+    margin-top: 55px;
 }.df3{
-    grid-row-start: 44 ;
+    grid-row-start: 35 ;
+    margin-top: -25px;
+    height: 255px;
 }.df4{
-    grid-row-start: 48 ;
-    margin-top: -2px;
+    grid-row-start: 32 ;
+    margin-top: -40px;
 }.df5{
-    grid-row-start: 52 ;
-    margin-top: 30px;
+    grid-row-start: 37 ;
+    margin-top: 55px;
 }
 #publicity{
     grid-area: 9/2/13/6;
@@ -441,26 +448,27 @@ header{
 
 .footer-grid{
     display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-column: 2/-1;
     background-color: #427aa1;
     color: black;
     font-weight: bold;
-    margin-top: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: solid black 1px;
+    padding: 10px 0;
 }
 .footer-grid a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 .footer-grid h2{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+}
+.follow-icons img{
+    width: 40px;
 }
 .footer-grid a:hover{
     color: black;
