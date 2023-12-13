@@ -46,8 +46,8 @@ header{
     
 }
 .gallery-images{
-    margin: 0.5px 2px;
-    width: 173px;
+    margin: 0.5px 1px;
+    width: 180px;
     margin-top: 3px;
 }
 
@@ -75,7 +75,7 @@ header{
     grid-column: 1/ -1;
     grid-row-start: 3;
     height: 40px;
-    margin-top:40px;
+    margin-top:45px;
     
 }
 .tours-menu a{
