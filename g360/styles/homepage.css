@@ -614,26 +614,27 @@ nav a:hover{
 
 .footer-grid{
     display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-column: 2/-1;
     background-color: #427aa1;
     color: black;
     font-weight: bold;
-    margin-top: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: solid black 1px;
+    padding: 1px 0;
 }
 .footer-grid a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 .footer-grid h2{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+}
+.follow-icons img{
+    width: 40px;
 }
 .footer-grid a:hover{
     color: black;
