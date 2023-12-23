@@ -1,5 +1,6 @@
 *{
     font-family: serif;
+    max-width: 1750px;
 }
 header{   
     padding: 4px;
@@ -7,6 +8,7 @@ header{
     grid-template-columns: 30% 40% 30%;   
     font-family: serif; 
     background-color: #427aa1; 
+    margin-top: -8px;
 }
 #logo{
     width: 40px;
